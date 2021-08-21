@@ -13,7 +13,7 @@
         "server": "cd backend && node server.js",
         "server:watch": "cd backend && nodemon server.js",
         "client": "cd client && npm start",
-        "heroku-postbuild": "cd client && npm install && npm run build"
+        "client:build": "cd client && npm install && npm run build"
     },
     "keywords": [],
     "author": "",
