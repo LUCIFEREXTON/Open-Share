@@ -10,6 +10,7 @@ import LoginPage from '../containers/LoginPage';
 import ProfilePage from '../containers/ProfilePage';
 import SettingsPage from '../containers/SettingsPage';
 import SignupPage from '../containers/SignupPage';
+import Materials from '../containers/Materials'
 import NotFound from './NotFound';
 
 initAnalytics('UA-126201794-1');
@@ -24,6 +25,7 @@ const Root = () => (
     <Route path="/following" component={FollowingPage} />
     <Route path="/discover" component={DiscoverPage} />
     <Route path="/settings" component={SettingsPage} />
+    <Route path="/materials" component={Materials} />
     <Route component={NotFound} />
   </Switch>
 );

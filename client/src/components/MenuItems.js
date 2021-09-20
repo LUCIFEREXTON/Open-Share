@@ -9,6 +9,7 @@ import GroupIcon from '@material-ui/icons/GroupAdd';
 import HomeIcon from '@material-ui/icons/Home';
 import PeopleIcon from '@material-ui/icons/People';
 import SettingsIcon from '@material-ui/icons/Settings';
+import AssignmentIcon from '@material-ui/icons/Assignment';
 
 import { Link } from 'react-router-dom';
 
@@ -44,6 +45,14 @@ export const FolderListItems = ({ user }) => (
           <GroupIcon />
         </ListItemIcon>
         <ListItemText primary="Discover" />
+      </ListItem>
+    </Link>
+    <Link style={{ textDecoration: 'none' }} to="/materials">
+      <ListItem button>
+        <ListItemIcon>
+          <AssignmentIcon />
+        </ListItemIcon>
+        <ListItemText primary="Library" />
       </ListItem>
     </Link>
   </div>

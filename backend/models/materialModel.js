@@ -3,6 +3,10 @@ const mongoose = require('mongoose');
 const { Schema } = mongoose;
 
 const MaterialSchema = new Schema({
+    authorId: {
+        type: String,
+        required: true
+    },
     name: {
         type: String,
         required: true
@@ -11,17 +15,17 @@ const MaterialSchema = new Schema({
         type: String,
         required: true
     },
+    url: {
+        type: String,
+        required: true
+    },
     subjectName: {
         type: String
-    },
-    createdAt: {
-        type: Date,
-        default: Date.now
     },
     year: {
         type: Number,
         required: true
     }
-});
+}, { timestamps: true });
 
 module.exports = mongoose.model('Material', MaterialSchema);

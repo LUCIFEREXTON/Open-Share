@@ -107,6 +107,7 @@ class SignupPage extends Component {
     createUser(user);
   };
 
+
   render() {
     const { classes } = this.props;
     const { errors, successfulSignup } = this.state;
